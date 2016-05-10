@@ -1,0 +1,28 @@
+/******************************************/
+/*=========     MEDIA-QUERIES    =========*/
+/******************************************/
+@media (min-width: 768px)
+	// version SM
+	.time-line			/*Es la lista*/
+		&::before
+			left: 50%	/*MB Muevo la linea a la mitad de la pantalla*/
+		li:nth-child(even)
+			+clearfix
+			.time-line-text
+				float: right		
+				text-align: left
+				padding: 0 50px 0 20px		
+
+	.time-line-img
+		width: 120px
+		height: 120px
+		left: 50%
+		margin-left: -60px
+
+	.time-line-text
+		width: 40%
+		text-align: right
+		padding: 0 20px 0 50px
+
+@media (min-width: 992px)
+	// version MD
